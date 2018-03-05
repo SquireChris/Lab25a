@@ -38,7 +38,7 @@ int main() {
     const char SECTION[]        = "MW: 7:30a - 12:00p";
     const int LAB_NUM           = 8;
     const char LAB_NAME[]         = "Eclipse Tutorial";
-    // variable declorations go here
+    // variable declarations go here
 
     //OUTPUT - class heading
 
