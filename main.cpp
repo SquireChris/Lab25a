@@ -1,6 +1,6 @@
 /****************************************************************************
- * AUTHOR       : Corey dickinson, JOSHUA SALZEDO
- * STUDENT ID   : ?,1094998
+ * AUTHOR       : JOSHUA SALZEDO
+ * STUDENT ID   : 1094998
  * LAB #8       : Intro to programming
  * CLASS        : CS1A
  * SECTION      : MW: 8AM
@@ -34,7 +34,7 @@ int main() {
  * LAB_NUM      :   Lab Number
  * LAB_NAME     :   Title of the lab
  * *************************************************************************/
-    const char PROGRAMMER[]     = "Corey dickinson, Joshua Salzedo";
+    const char PROGRAMMER[]     = "Joshua Salzedo";
     const char CLASS[]          = "CS1A";
     const char SECTION[]        = "MW: 7:30a - 12:00p";
     const int LAB_NUM           = 10;
