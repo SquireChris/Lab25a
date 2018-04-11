@@ -52,7 +52,7 @@ int main() {
     cout << "* "   <<  setw(14)    << "CLASS"   <<  ": " << CLASS   <<  endl;
     cout << "* "   <<  setw(14)    << "SECTION" <<  ": " << SECTION <<  endl;
     cout << "* LAB# "   << setw(9) << LAB_NUM  << ": " << LAB_NAME  <<  endl;
-    cout << "***********************************************************n\n";
+    cout << "**********************************************************\n\n";
     cout << right;
     /************************************************************************
      * INPUT - reads two inputs from the user (firstNum & secondNum)
