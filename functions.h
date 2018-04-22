@@ -15,4 +15,5 @@ using namespace std;
 
 double AverageIntArray(const int arr[], int arrLen);
 
+int FindFirstInstance(const int arr[], int arrLen, int searchInt);
 #endif /* functions */

@@ -30,3 +30,22 @@ double AverageIntArray(const int arr[], int arrLen)
     }
     return average;
 }
+
+int FindFirstInstance(const int arr[], int arrLen, int searchInt)
+{
+    int index;
+    bool found;
+
+    found = false;
+    index = 0;
+
+    while(!found && index < arrLen)
+    {
+        found  = arr[index] == searchInt;
+        if (!found)
+        {
+            ++index;
+        }
+    }
+    return index;
+}
