@@ -13,12 +13,13 @@
 
 using namespace std;
 
-double AverageIntArray(const int arr[], int arrLen);
+double AverageIntArray(const int ARR[], int arrLen);
 int FindFirstInstance(const int ARR[], int arrLen, int searchInt);
 int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt);
 int FindLargestInt(const int ARR[], int arrLen);
 int FindString(const string ARR[], int arrLen, const string &SEARCH_STR);
 int FindSmallestInt(const int ARR[], int arrLen);
+int SumIntArray(const int ARR[], int arrLen);
 
 
 #endif /* functions */

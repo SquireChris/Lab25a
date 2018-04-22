@@ -8,24 +8,35 @@
 
 #include "functions.h"
 
-double AverageIntArray(const int arr[], int arrLen)
+int SumIntArray(const int ARR[], int arrLen)
+{
+    int sum;
+    sum = 0;
+
+    if (arrLen > 0)
+    {
+        for (int index = 0; index < arrLen; ++index)
+        {
+            sum += ARR[index];
+        }
+    }
+    return sum;
+}
+
+double AverageIntArray(const int ARR[], int arrLen)
 {
     // define
     int sum;
     double average;
 
     //initialize
-    sum = 0;
     average = 0.0;
 
     // divide by zero check
-    if (arrLen != 0)
+    if (arrLen > 0)
     {
         // loop over and add all elements to the accumulator `sum`
-        for (int index = 0; index < arrLen; ++index)
-        {
-            sum += arr[index];
-        }
+        sum = SumIntArray(ARR, arrLen);
         average = double(sum) / arrLen;
     }
     return average;
