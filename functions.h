@@ -14,8 +14,9 @@
 using namespace std;
 
 double AverageIntArray(const int arr[], int arrLen);
-int FindFirstInstance(const int arr[], int arrLen, int searchInt);
-int FindOccurrencesInt(const int arr[], int arrLen, int searchInt);
+int FindFirstInstance(const int ARR[], int arrLen, int searchInt);
+int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt);
+int FindName(const string *ARR, int arrLen, const string &name);
 
 
 #endif /* functions */

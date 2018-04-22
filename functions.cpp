@@ -31,7 +31,45 @@ double AverageIntArray(const int arr[], int arrLen)
     return average;
 }
 
-int FindFirstInstance(const int arr[], int arrLen, int searchInt)
+int FindFirstInstance(const int ARR[], int arrLen, int searchInt)
+{
+    int index;
+    bool found;
+
+    foun d = false;
+    index = 0;
+
+    while (!found && index < arrLen)
+    {
+        found = ARR[index] == searchInt;
+        if (!found)
+        {
+            ++index;
+        }
+    }
+    return index;
+}
+
+int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt)
+{
+    int occurrences;
+    occurrences = 0;
+
+    // loop over collection
+    for (int index = 0; index < arrLen; ++index)
+    {
+        // check if the item is equal to the search term
+        if (ARR[index] == searchInt)
+        {
+            ++occurrences;
+        }
+    }
+
+    return occurrences;
+
+}
+
+int FindName(const string ARR[], int arrLen, const string &NAME)
 {
     int index;
     bool found;
@@ -41,30 +79,11 @@ int FindFirstInstance(const int arr[], int arrLen, int searchInt)
 
     while (!found && index < arrLen)
     {
-        found = arr[index] == searchInt;
+        found = ARR[index] == NAME;
         if (!found)
         {
             ++index;
         }
     }
     return index;
-}
-
-int FindOccurrencesInt(const int arr[], int arrLen, int searchInt)
-{
-    int occurrences;
-    occurrences = 0;
-
-    // loop over collection
-    for (int index = 0; index < arrLen; ++index)
-    {
-        // check if the item is equal to the search term
-        if (arr[index] == searchInt)
-        {
-            ++occurrences;
-        }
-    }
-
-    return occurrences;
-
 }
