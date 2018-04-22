@@ -13,10 +13,13 @@ int SumIntArray(const int ARR[], int arrLen)
     int sum;
     sum = 0;
 
+    // sanity check
     if (arrLen > 0)
     {
+        // loop over items in collection
         for (int index = 0; index < arrLen; ++index)
         {
+            // and accumulate them
             sum += ARR[index];
         }
     }
@@ -32,7 +35,7 @@ double AverageIntArray(const int ARR[], int arrLen)
     //initialize
     average = 0.0;
 
-    // divide by zero check
+    // sanity check
     if (arrLen > 0)
     {
         // loop over and add all elements to the accumulator `sum`
