@@ -39,13 +39,32 @@ int FindFirstInstance(const int arr[], int arrLen, int searchInt)
     found = false;
     index = 0;
 
-    while(!found && index < arrLen)
+    while (!found && index < arrLen)
     {
-        found  = arr[index] == searchInt;
+        found = arr[index] == searchInt;
         if (!found)
         {
             ++index;
         }
     }
     return index;
+}
+
+int FindOccurrencesInt(const int arr[], int arrLen, int searchInt)
+{
+    int occurrences;
+    occurrences = 0;
+
+    // loop over collection
+    for (int index = 0; index < arrLen; ++index)
+    {
+        // check if the item is equal to the search term
+        if (arr[index] == searchInt)
+        {
+            ++occurrences;
+        }
+    }
+
+    return occurrences;
+
 }
