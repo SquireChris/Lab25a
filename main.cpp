@@ -40,6 +40,33 @@ int main() {
     const int LAB_NUM           = 25;
     const char LAB_NAME[]       = "Array Train # 1";
 
+    const string NAMES[] = {
+            "zac",
+            "Kasra",
+            "Bas",
+            "Sara",
+            "Nick",
+            "Delvin",
+            "Justin",
+            "Abe",
+            "Jeremy",
+            "Farah",
+            "Maryan",
+    };
+    const int AGES[] = {
+            22,
+            75,
+            19,
+            21,
+            18,
+            12,
+            19,
+            5,
+            62,
+            21,
+            21
+    };
+
     DisplayHeader(PROGRAMMER, CLASS, SECTION, LAB_NUM, LAB_NAME);
     /************************************************************************
      * INPUT - reads two inputs from the user (firstNum & secondNum)
