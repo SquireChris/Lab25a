@@ -1,13 +1,13 @@
 /****************************************************************************
- * AUTHOR       : JOSHUA SALZEDO
- * STUDENT ID   : 1094998
- * LAB #8       : Intro to programming
+ * AUTHOR       : JOSHUA SALZEDO, Chris Burrell
+ * LAB #8       : Array Train - Set # 1
  * CLASS        : CS1A
  * SECTION      : MW: 8AM
- * DUE DATE     : 03/05/2018
+ * DUE DATE     : 04/23/2018
  ***************************************************************************/
 #include <iostream>
 #include <iomanip>
+#include "MyHeader.h"
 
 using namespace std;
 /****************************************************************************
@@ -34,26 +34,13 @@ int main() {
  * LAB_NUM      :   Lab Number
  * LAB_NAME     :   Title of the lab
  * *************************************************************************/
-    const char PROGRAMMER[]     = "Joshua Salzedo";
+    const char PROGRAMMER[]     = "Joshua Salzedo, Chris Burrell";
     const char CLASS[]          = "CS1A";
-    const char SECTION[]        = "MW: 7:30a - 12:00p";
-    const int LAB_NUM           = 10;
-    const char LAB_NAME[]         = "Intro to programming";
+    const char SECTION[]        = "MW: 8:00a - 12:00p";
+    const int LAB_NUM           = 25;
+    const char LAB_NAME[]       = "Array Train # 1";
 
-    int firstNum;   // IN. CALC & OUTPUT    - first user input
-    int secondNum;  // IN. CALC & OUTPUT    - second user input
-    int sum;        // CALC & OUTPUT        - contains the result of the sum
-                    // of two  inputs
-
-    //OUTPUT - class heading
-    cout << left;
-    cout << "************************************************************\n";
-    cout << "* PROGRAMMED BY : "    << PROGRAMMER << endl;
-    cout << "* "   <<  setw(14)    << "CLASS"   <<  ": " << CLASS   <<  endl;
-    cout << "* "   <<  setw(14)    << "SECTION" <<  ": " << SECTION <<  endl;
-    cout << "* LAB# "   << setw(9) << LAB_NUM  << ": " << LAB_NAME  <<  endl;
-    cout << "**********************************************************\n\n";
-    cout << right;
+    DisplayHeader(PROGRAMMER, CLASS, SECTION, LAB_NUM, LAB_NAME);
     /************************************************************************
      * INPUT - reads two inputs from the user (firstNum & secondNum)
      ***********************************************************************/

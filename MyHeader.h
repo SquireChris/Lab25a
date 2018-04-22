@@ -14,7 +14,7 @@
 #include <string>
 using namespace std;
 
-void displayHeader(const string &programmer, const string &mClass,
+void DisplayHeader(const string &programmer, const string &mClass,
                    const string &section, int num,
                    const string &name, char byType = 'L');
 
