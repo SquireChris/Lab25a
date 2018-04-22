@@ -36,7 +36,7 @@ int FindFirstInstance(const int ARR[], int arrLen, int searchInt)
     int index;
     bool found;
 
-    foun d = false;
+    found = false;
     index = 0;
 
     while (!found && index < arrLen)
@@ -69,7 +69,7 @@ int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt)
 
 }
 
-int FindName(const string ARR[], int arrLen, const string &NAME)
+int FindString(const string ARR[], int arrLen, const string &SEARCH_STR)
 {
     int index;
     bool found;
@@ -79,11 +79,28 @@ int FindName(const string ARR[], int arrLen, const string &NAME)
 
     while (!found && index < arrLen)
     {
-        found = ARR[index] == NAME;
+        found = ARR[index] == SEARCH_STR;
         if (!found)
         {
             ++index;
         }
     }
     return index;
+}
+
+int FindLargestInt(const int ARR[], int arrLen)
+{
+    int max;
+    int item;
+    max = 0;
+
+    for (int index = 0; index < arrLen; ++index)
+    {
+        item = ARR[index];
+        if (item > max)
+        {
+            max = item;
+        }
+    }
+    return max;
 }

@@ -8,8 +8,10 @@
 #include <iostream>
 #include <iomanip>
 #include "MyHeader.h"
+#include "functions.h"
 
 using namespace std;
+
 /****************************************************************************
  * Intro to programming
  * --------------------------------------------------------------------------
@@ -22,7 +24,8 @@ using namespace std;
  *  the inputs and the sum of thw two inputs in the fo
  ***************************************************************************/
 
-int main() {
+int main()
+{
 /****************************************************************************
  * CONSTANTS
  * --------------------------------------------------------------------------
@@ -34,11 +37,13 @@ int main() {
  * LAB_NUM      :   Lab Number
  * LAB_NAME     :   Title of the lab
  * *************************************************************************/
-    const char PROGRAMMER[]     = "Joshua Salzedo, Chris Burrell";
-    const char CLASS[]          = "CS1A";
-    const char SECTION[]        = "MW: 8:00a - 12:00p";
-    const int LAB_NUM           = 25;
-    const char LAB_NAME[]       = "Array Train # 1";
+    const char PROGRAMMER[] = "Joshua Salzedo, Chris Burrell";
+    const char CLASS[] = "CS1A";
+    const char SECTION[] = "MW: 8:00a - 12:00p";
+    const int LAB_NUM = 25;
+    const char LAB_NAME[] = "Array Train # 1";
+
+    const int AR_LEN = 11;
 
     const string NAMES[] = {
             "zac",
