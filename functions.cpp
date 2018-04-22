@@ -104,3 +104,20 @@ int FindLargestInt(const int ARR[], int arrLen)
     }
     return max;
 }
+
+int FindSmallestInt(const int ARR[], int arrLen)
+{
+    int min;
+    int item;
+    min = 9999;
+
+    for (int index = 0; index < arrLen; ++index)
+    {
+        item = ARR[index];
+        if (item < min)
+        {
+            min = item;
+        }
+    }
+    return min;
+}

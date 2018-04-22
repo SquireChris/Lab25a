@@ -18,6 +18,7 @@ int FindFirstInstance(const int ARR[], int arrLen, int searchInt);
 int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt);
 int FindLargestInt(const int ARR[], int arrLen);
 int FindString(const string ARR[], int arrLen, const string &SEARCH_STR);
+int FindSmallestInt(const int ARR[], int arrLen);
 
 
 #endif /* functions */
