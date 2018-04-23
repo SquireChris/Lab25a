@@ -14,15 +14,18 @@ using namespace std;
 
 
 /****************************************************************************
- * Intro to programming
+ *  Array Train - Set # 1
  * --------------------------------------------------------------------------
- * This program will output the sum of two numbers
+ * This program outputs min, max, avg, and sum of two parallel arrays
+ *  and outputs selected elements from user input
  * --------------------------------------------------------------------------
  * INPUT:
- *  reads in two inputs from the user (firstNum & secondNum)
+ *  Age to saerch by
+ *  name so earch by
  *
  * OUTPUT:
- *  the inputs and the sum of thw two inputs in the fo
+ *  Average age , minimum age, maximum age, sum of ages,
+ *  namees and ages from user input
  ***************************************************************************/
 
 int main()
@@ -32,16 +35,18 @@ int main()
  * --------------------------------------------------------------------------
  * OUTPUT - USED FOR CLASS HEADING
  * --------------------------------------------------------------------------
- * PROGRAMMER   :   Programmer's Name
- * CLASS        :   students course
- * SECTION      :   Class Days and Times
- * LAB_NUM      :   Lab Number
- * LAB_NAME     :   Title of the lab
+ * PROGRAMMER       :   Programmer's Name
+ * CLASS            :   students course
+ * SECTION          :   Class Days and Times
+ * LAB_NUM          :   Lab Number
+ * LAB_NAME         :   Title of the lab
  * --------------------------------------------------------------------------
  * PROCESSING - USED FOR PROGRAM EXECUTION
  * --------------------------------------------------------------------------
- * NAMES        :   hardcoded input names (parallel array)
- * AGES         :   hardcoded input ages (parallel array)
+ * NAMES            :   hardcoded input names (parallel array)
+ * AGES             :   hardcoded input ages (parallel array)
+ * PROMPT_FIND_INT  :   Prompt for an age input
+ * PROMPT_NAME      :   Prompt for a name input
  * *************************************************************************/
     const char PROGRAMMER[] = "Joshua Salzedo, Chris Burrell";
     const char CLASS[] = "CS1A";
@@ -100,9 +105,7 @@ int main()
 
     // OUTPUT - class header
     DisplayHeader(PROGRAMMER, CLASS, SECTION, LAB_NUM, LAB_NAME);
-    /************************************************************************
-     * INPUT - reads two inputs from the user (firstNum & secondNum)
-     ***********************************************************************/
+
     // compute the average of the AGES array
     averageAges = AverageIntArray(AGES, AR_LEN);
 
@@ -311,14 +314,6 @@ int main()
     cout << endl;
     cout << "Done.";
 
-
-    /************************************************************************
-     * PROCESSING - describe processing here
-     ***********************************************************************/
-
-    /************************************************************************
-     * OUTPUT- describe output here
-     ***********************************************************************/
     return 0;
 }
 
