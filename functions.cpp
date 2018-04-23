@@ -8,6 +8,18 @@
 
 #include "functions.h"
 
+/***************************************************************************
+ * FUNCTION SumIntArray
+ * --------------------------------------------------------------------------
+ * Outputs the sum of all elements within an integer array
+ * --------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ *      The following parameters must have defined values:
+ *          ARR
+ *          arrLen
+ * POST-CONDITIONS
+ *      ==> returns sum
+ ***************************************************************************/
 int SumIntArray(const int ARR[], int arrLen)
 {
     int sum;
@@ -25,7 +37,19 @@ int SumIntArray(const int ARR[], int arrLen)
     }
     return sum;
 }
-
+/***************************************************************************
+ * FUNCTION AverageIntArray
+ * --------------------------------------------------------------------------
+ * Outputs the average of the elements of the array
+ * --------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ *      The following parameters must have defined values:
+ *          ARR
+ *          arrLen
+ *          searchInt
+ * POST-CONDITIONS
+ *      ==> returns index: the position of the item's first occurrence
+ ***************************************************************************/
 double AverageIntArray(const int ARR[], int arrLen)
 {
     // define
@@ -44,7 +68,19 @@ double AverageIntArray(const int ARR[], int arrLen)
     }
     return average;
 }
-
+/***************************************************************************
+ * FUNCTION FindFirstInstance
+ * --------------------------------------------------------------------------
+ * Outputs the index the first time input integer occurs within the array
+ * --------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ *      The following parameters must have defined values:
+ *          ARR
+ *          arrLen
+ *          searchInt
+ * POST-CONDITIONS
+ *      ==> returns index: the position of the item's first occurrence
+ ***************************************************************************/
 int FindFirstInstance(const int ARR[], int arrLen, int searchInt)
 {
     int index;
@@ -63,7 +99,19 @@ int FindFirstInstance(const int ARR[], int arrLen, int searchInt)
     }
     return index;
 }
-
+/***************************************************************************
+ * FUNCTION FindOccurrencesInt
+ * --------------------------------------------------------------------------
+ * Outputs the number of times an int occurs within the input array
+ * --------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ *      The following parameters must have defined values:
+ *          ARR
+ *          arrLen
+ *          searchInt
+ * POST-CONDITIONS
+ *      ==> returns occurrences: the number of times an int occurs
+ ***************************************************************************/
 int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt)
 {
     int occurrences;
@@ -83,6 +131,19 @@ int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt)
 
 }
 
+/***************************************************************************
+ * FUNCTION FindString
+ * --------------------------------------------------------------------------
+ * Outputs the index of the searched string within an array
+ * --------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ *      The following parameters must have defined values:
+ *          ARR
+ *          arrLen
+ *          SEARCH_STR
+ * POST-CONDITIONS
+ *      ==> returns Index: the index of the searched name
+ ***************************************************************************/
 int FindString(const string ARR[], int arrLen, const string &SEARCH_STR)
 {
     int index;
@@ -101,7 +162,18 @@ int FindString(const string ARR[], int arrLen, const string &SEARCH_STR)
     }
     return index;
 }
-
+/***************************************************************************
+ * FUNCTION FindLargestInt
+ * --------------------------------------------------------------------------
+ * Outputs the index of the largest element within the input array
+ * --------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ *      The following parameters must have defined values:
+ *          ARR
+ *          arrLen
+ * POST-CONDITIONS
+ *      ==> returns minIndex: largest element's index
+ ***************************************************************************/
 int FindLargestInt(const int ARR[], int arrLen)
 {
     int max;
@@ -122,7 +194,18 @@ int FindLargestInt(const int ARR[], int arrLen)
     }
     return maxIndex;
 }
-
+/***************************************************************************
+ * FUNCTION FindSmallestInt
+ * --------------------------------------------------------------------------
+ * Outputs the index of the smallest element within the input array
+ * --------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ *      The following parameters must have defined values:
+ *          ARR
+ *          arrLen
+ * POST-CONDITIONS
+ *      ==> returns minIndex: smallest element's index
+ ***************************************************************************/
 int FindSmallestInt(const int ARR[], int arrLen)
 {
     // declare
