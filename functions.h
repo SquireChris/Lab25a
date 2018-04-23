@@ -54,9 +54,9 @@ int FindLargestInt(const int ARR[], // IN - integer array
  *      Outputs the index of the searched string within an array
  *          ==> returns Index: the index of the searched name
  ***************************************************************************/
-int FindString(const int ARR[],             // IN - integer array
+int FindString(const string ARR[],             // IN - integer array
                int arrLen,                  // IN - Array length
-               const string &SEARCH_STR);   // IN - string to search for
+               const string &string1);   // IN - string to search for
 
 /***************************************************************************
  * FindSmallestInt

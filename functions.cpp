@@ -20,7 +20,8 @@
  * POST-CONDITIONS
  *      ==> returns sum
  ***************************************************************************/
-int SumIntArray(const int ARR[], int arrLen)
+int SumIntArray(const int ARR[], // IN - integer array
+                int arrLen)      // IN - Array length
 {
     int sum;
     sum = 0;
@@ -50,7 +51,8 @@ int SumIntArray(const int ARR[], int arrLen)
  * POST-CONDITIONS
  *      ==> returns index: the position of the item's first occurrence
  ***************************************************************************/
-double AverageIntArray(const int ARR[], int arrLen)
+double AverageIntArray(const int ARR[], // IN - integer array
+                       int arrLen)      // IN - Array length
 {
     // define
     int sum;
@@ -81,7 +83,9 @@ double AverageIntArray(const int ARR[], int arrLen)
  * POST-CONDITIONS
  *      ==> returns index: the position of the item's first occurrence
  ***************************************************************************/
-int FindFirstInstance(const int ARR[], int arrLen, int searchInt)
+int FindFirstInstance(const int ARR[], // IN - integer array
+                      int arrLen,      // IN - length of array
+                      int searchInt)   // IN - int to search for
 {
     int index;
     bool found;
@@ -112,7 +116,9 @@ int FindFirstInstance(const int ARR[], int arrLen, int searchInt)
  * POST-CONDITIONS
  *      ==> returns occurrences: the number of times an int occurs
  ***************************************************************************/
-int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt)
+int FindOccurrencesInt(const int ARR[], // IN - integer array
+                       int arrLen,      // IN - length of array
+                       int searchInt)   // IN - int to search for
 {
     int occurrences;
     occurrences = 0;
@@ -144,7 +150,9 @@ int FindOccurrencesInt(const int ARR[], int arrLen, int searchInt)
  * POST-CONDITIONS
  *      ==> returns Index: the index of the searched name
  ***************************************************************************/
-int FindString(const string ARR[], int arrLen, const string &SEARCH_STR)
+int FindString(const string ARR[],             // IN - integer array
+               int arrLen,                  // IN - Array length
+               const string &string1)   // IN - string to search for
 {
     int index;
     bool found;
@@ -154,7 +162,7 @@ int FindString(const string ARR[], int arrLen, const string &SEARCH_STR)
 
     while (!found && index < arrLen)
     {
-        found = ARR[index] == SEARCH_STR;
+        found = ARR[index] == string1;
         if (!found)
         {
             ++index;
@@ -174,7 +182,8 @@ int FindString(const string ARR[], int arrLen, const string &SEARCH_STR)
  * POST-CONDITIONS
  *      ==> returns minIndex: largest element's index
  ***************************************************************************/
-int FindLargestInt(const int ARR[], int arrLen)
+int FindLargestInt(const int ARR[], // IN - integer array
+                   int arrLen)      // IN - Array length
 {
     int max;
     int maxIndex;
@@ -206,7 +215,8 @@ int FindLargestInt(const int ARR[], int arrLen)
  * POST-CONDITIONS
  *      ==> returns minIndex: smallest element's index
  ***************************************************************************/
-int FindSmallestInt(const int ARR[], int arrLen)
+int FindSmallestInt(const int ARR[], // IN - integer array
+                    int arrLen)      // IN - Array length
 {
     // declare
     int min;
