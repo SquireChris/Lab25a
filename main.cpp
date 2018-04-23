@@ -85,7 +85,7 @@ int main()
     int searchInt;
     int foundNameIndex;
     string searchString;
-    string fstring;
+    string formattedString;
     string oldestPerson;
     string youngestPerson;
 
@@ -105,30 +105,30 @@ int main()
     // check if an instance was actually found
     if (firstInstanceOfAgeIndex != AR_LEN)
     {
-        fstring = "you found ";
-        fstring += NAMES[firstInstanceOfAgeIndex];
-        fstring += '\n';
+        formattedString = "you found ";
+        formattedString += NAMES[firstInstanceOfAgeIndex];
+        formattedString += '\n';
 
     }
     else
     {
-        fstring = "Name not found on the list.\n";
+        formattedString = "Name not found on the list.\n";
     }
-    cout << fstring;
+    cout << formattedString;
 
     // find total occurences of the age
     totalOccurrences = FindOccurrencesInt(AGES, AR_LEN, searchInt);
     if (totalOccurrences != 0)
     {
-        fstring = "there was a total of ";
-        fstring += to_string(totalOccurrences);
-        fstring += " occurrences of that age.\n";
+        formattedString = "there was a total of ";
+        formattedString += to_string(totalOccurrences);
+        formattedString += " occurrences of that age.\n";
     }
     else
     {
-        fstring = "There were no occurences of that age.\n";
+        formattedString = "There were no occurences of that age.\n";
     }
-    cout << fstring;
+    cout << formattedString;
 
 
     cout << "enter name to search for: ";
@@ -138,16 +138,31 @@ int main()
 
     if (foundNameIndex == AR_LEN)
     {
-        fstring = "Name ";
-        fstring += searchString += " not found.";
+        formattedString = "Name ";
+        formattedString += searchString += " not found.";
     }
     else
     {
-        fstring = "Found ";
-        fstring += NAMES[foundNameIndex];
+        formattedString = "Found ";
+        formattedString += NAMES[foundNameIndex];
     }
 
-    cout << fstring << endl;
+    cout << formattedString << endl;
+
+    // fetch the index of the oldest person
+    largestAgeIndex = FindLargestInt(AGES, AR_LEN);
+    // and assign their name to a value we can more easily use
+    oldestPerson = NAMES[largestAgeIndex];
+
+    // fetch the index of the youngest person
+    smallestAgeIndex = FindSmallestInt(AGES, AR_LEN);
+    youngestPerson = NAMES[smallestAgeIndex];
+
+    cout << "The oldest person is " << oldestPerson << endl;
+    cout << "The youngest person is " << youngestPerson << endl;
+
+    sumAges = SumIntArray(AGES, AR_LEN);
+    cout << "Overall, the total combined age is " << sumAges;
 
 
 
