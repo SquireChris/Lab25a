@@ -8,7 +8,7 @@
 #include <iostream>
 #include <iomanip>
 #include "MyHeader.h"
-#include "functions.h"
+#include "functions.cpp.h"
 
 /****************************************************************************
  *  Array Train - Set # 1

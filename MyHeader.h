@@ -1,10 +1,9 @@
 /****************************************************************************
- * AUTHOR       : JOSHUA SALZEDO
- * STUDENT ID   : 1094998
- * Assignment #9: Intro to programming
+ * AUTHOR       : JOSHUA SALZEDO, Chris Burrell
+ * LAB # 25a    : Array Train Set # 1
  * CLASS        : CS1A
  * SECTION      : MW: 8AM
- * DUE DATE     : 04/15/2018
+ * DUE DATE     : 04/23/2018
  ***************************************************************************/
 
 #ifndef MY_HEADER_H_
