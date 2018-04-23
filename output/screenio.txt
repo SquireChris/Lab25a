@@ -1,0 +1,65 @@
+************************************************************
+* PROGRAMMED BY : Joshua Salzedo, Chris Burrell
+* CLASS         : CS1A
+* SECTION       : MW: 8:00a - 12:00p
+* LAB# 25       : Array Train # 1
+**********************************************************
+
+Average value of ages array is : 26.82
+
+Please enter an age you want to look for: 5
+you found Abe who is 5 years old at index # 7
+
+there is a grand total of one person with that specific age.
+enter a name to find: Potato
+Im sorry, "Potato" was not found in my records.
+
+The oldest person is Kasra who is 75 years old which exists at index #1
+The youngest person is Abe who is 5 years old which exists at index #1
+Overall, the total combined age is 295
+========================
+==-- Begin Part 3&4 --==
+========================
+ ----------= Test #1=----------
+The average of the array is 26.82
+ ----------= Test #2=----------
+Please enter an age you want to look for: 21
+Sara is 21 years old(index # 3)
+Please enter an age you want to look for: 42
+42 does not exist within the array.
+Please enter an age you want to look for: -999
+Invalid input. Please enter a value between 0 and 100.
+
+Please enter an age you want to look for: 10
+10 does not exist within the array.
+Please enter an age you want to look for: 21
+Sara is 21 years old(index # 3)
+
+ ----------= Test #3=----------
+Please enter an age you want to look for: 5
+5 Occured 1 time(s).
+Please enter an age you want to look for: 21
+21 Occured 3 time(s).
+Please enter an age you want to look for: 555
+Invalid input. Please enter a value between 0 and 100.
+
+Please enter an age you want to look for: 55
+55 Occured 0 time(s).
+Please enter an age you want to look for: 19
+19 Occured 2 time(s).
+
+ ----------= Test #4=----------
+ does not exist within the array.
+ does not exist within the array.
+ does not exist within the array.
+ does not exist within the array.
+ ----------= Test #5=----------
+
+The youngest person is Abe who is 5 years old (Index # 7)
+ ----------= Test #6=----------
+
+The oldest person is Kasra who is 75 years old (Index # 1)
+ ----------= Test #7=----------
+
+Sum of all elements of the array is: 295
+Done.

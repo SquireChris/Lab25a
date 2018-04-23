@@ -210,6 +210,8 @@ int main()
     cout << "==-- Begin Part 3&4 --==" << endl;
     cout << "========================" << endl;
 
+    cout << " ----------= Test #1=----------" << endl;
+
     cout << fixed << setprecision(2);
     // compute average
     averageAges = AverageIntArray(AGES, AR_LEN);
