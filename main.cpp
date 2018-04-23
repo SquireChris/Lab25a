@@ -107,28 +107,44 @@ int main()
     {
         formattedString = "you found ";
         formattedString += NAMES[firstInstanceOfAgeIndex];
-        formattedString += '\n';
+        formattedString += " who is ";
+        formattedString += to_string(AGES[firstInstanceOfAgeIndex]);
+        formattedString += " years old at index # ";
+        formattedString += to_string(firstInstanceOfAgeIndex) += '\n';
 
     }
     else
     {
         formattedString = "Name not found on the list.\n";
     }
-    cout << formattedString;
+    cout << formattedString << endl;
 
     // find total occurences of the age
     totalOccurrences = FindOccurrencesInt(AGES, AR_LEN, searchInt);
-    if (totalOccurrences != 0)
+    // reinit
+    formattedString = "";
+
+    // switch over # occurences, for word choice and verb tense.
+    switch (totalOccurrences)
     {
-        formattedString = "there was a total of ";
-        formattedString += to_string(totalOccurrences);
-        formattedString += " occurrences of that age.\n";
+        case 0:
+            formattedString = "There is noone with that age.\n";
+            break;
+
+        case 1:
+            formattedString = "there is a grand total of one person with "
+                              "that specific age.";
+            break;
+
+        default:
+            formattedString = "There are a total of ";
+            formattedString += to_string(totalOccurrences);
+            formattedString += " people with that age.";
+            // do something
+            break;
     }
-    else
-    {
-        formattedString = "There were no occurences of that age.\n";
-    }
-    cout << formattedString;
+
+    cout << formattedString << endl;
 
 
     cout << "enter name to search for: ";
