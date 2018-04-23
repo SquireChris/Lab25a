@@ -7,12 +7,12 @@
 
 Average value of ages array is : 26.82
 
-Please enter an age you want to look for: 5
-you found Abe who is 5 years old at index # 7
+Please enter an age you want to look for: 21
+you found Sara who is 21 years old at index # 3
 
-there is a grand total of one person with that specific age.
-enter a name to find: Potato
-Im sorry, "Potato" was not found in my records.
+There are a total of 3 people with that age.
+enter a name to find: Abe
+Abeis5 years old and exists at index #7
 
 The oldest person is Kasra who is 75 years old which exists at index #1
 The youngest person is Abe who is 5 years old which exists at index #1
@@ -23,36 +23,37 @@ Overall, the total combined age is 295
  ----------= Test #1=----------
 The average of the array is 26.82
  ----------= Test #2=----------
-Please enter an age you want to look for: 21
-Sara is 21 years old(index # 3)
-Please enter an age you want to look for: 42
-42 does not exist within the array.
-Please enter an age you want to look for: -999
+Please enter an age you want to look for: 99
+99 does not exist within the array.
+Please enter an age you want to look for: -1
 Invalid input. Please enter a value between 0 and 100.
 
-Please enter an age you want to look for: 10
-10 does not exist within the array.
+Please enter an age you want to look for: 100
+100 does not exist within the array.
 Please enter an age you want to look for: 21
 Sara is 21 years old(index # 3)
+Please enter an age you want to look for: 19
+Bas is 19 years old(index # 2)
 
  ----------= Test #3=----------
-Please enter an age you want to look for: 5
-5 Occured 1 time(s).
-Please enter an age you want to look for: 21
-21 Occured 3 time(s).
-Please enter an age you want to look for: 555
-Invalid input. Please enter a value between 0 and 100.
-
-Please enter an age you want to look for: 55
-55 Occured 0 time(s).
 Please enter an age you want to look for: 19
 19 Occured 2 time(s).
+Please enter an age you want to look for: 21
+21 Occured 3 time(s).
+Please enter an age you want to look for: 99
+99 Occured 0 time(s).
+Please enter an age you want to look for: 17
+17 Occured 0 time(s).
 
  ----------= Test #4=----------
- does not exist within the array.
- does not exist within the array.
- does not exist within the array.
- does not exist within the array.
+enter a name to find: Abe
+Abe is 5 years old( index # 7)
+enter a name to find: potato
+potato does not exist within the array.
+enter a name to find: ustin
+ustin does not exist within the array.
+enter a name to find: justin
+justin does not exist within the array.
  ----------= Test #5=----------
 
 The youngest person is Abe who is 5 years old (Index # 7)

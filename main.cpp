@@ -10,9 +10,6 @@
 #include "MyHeader.h"
 #include "functions.h"
 
-using namespace std;
-
-
 /****************************************************************************
  *  Array Train - Set # 1
  * --------------------------------------------------------------------------
@@ -267,6 +264,11 @@ int main()
         int resultIndex;
         string searchName;
 
+        cout << PROMPT_NAME;
+        // fetch a name
+        getline(cin, searchName);
+
+        // get the result
         resultIndex = FindString(NAMES, AR_LEN, searchName);
 
         if (resultIndex != AR_LEN)
@@ -277,6 +279,7 @@ int main()
         }
         else
         {
+            // array miss
             cout << searchName << " does not exist within the array.";
         }
         cout << endl;
