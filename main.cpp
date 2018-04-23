@@ -12,6 +12,7 @@
 
 using namespace std;
 
+
 /****************************************************************************
  * Intro to programming
  * --------------------------------------------------------------------------
@@ -73,6 +74,7 @@ int main()
     };
     const string PROMPT_FIND_INT = "Please enter an age you want to look "
                                    "for: ";
+    const string PROMPT_NAME = "enter a name to find: ";
 
 
     double averageAges;
@@ -146,7 +148,7 @@ int main()
     cout << formattedString << endl;
 
 
-    cout << "enter a name to find: ";
+    cout << PROMPT_NAME;
     getline(cin, searchString);
 
     nameIndex = FindString(NAMES, AR_LEN, searchString);
@@ -186,8 +188,111 @@ int main()
          << oldestPersonIndex << endl;
 
     sumAges = SumIntArray(AGES, AR_LEN);
-    cout << "Overall, the total combined age is " << sumAges;
+    cout << "Overall, the total combined age is " << sumAges << endl;
 
+    cout << left << left;
+    cout << "========================" << endl;
+    cout << "==-- Begin Part 3&4 --==" << endl;
+    cout << "========================" << endl;
+
+    cout << fixed << setprecision(2);
+    // compute average
+    averageAges = AverageIntArray(AGES, AR_LEN);
+
+    cout << "The average of the array is " << averageAges << endl;
+    // restore defaults
+    cout << scientific << setprecision(6);
+
+    cout << " ----------= Test #2=----------" << endl;
+    // loop over caluclating first instance of the array
+    for (int i = 0; i < 4; ++i)
+    {
+        int myInt;
+        int result;
+
+        myInt = SaneInputCinInt(0, 100, PROMPT_FIND_INT);
+        result = FindFirstInstance(AGES, AR_LEN, myInt);
+
+        if (result == AR_LEN)
+        {
+            cout << myInt << " does not exist within the array." << endl;
+        }
+        else
+        {
+            cout << NAMES[result] << " is " << AGES[result] << " years old"
+                 << "(index # " << result << ')' << endl;
+
+        }
+    }
+
+    cout << endl;
+
+    cout << " ----------= Test #3=----------" << endl;
+    for (int i = 0; i < 4; ++i)
+    {
+        int instances;
+        int input;
+
+        input = SaneInputCinInt(0, 100, PROMPT_FIND_INT);
+        instances = FindOccurrencesInt(AGES, AR_LEN, input);
+
+        cout << input << " Occured " << instances << " time(s)." << endl;
+    }
+
+    cout << endl;
+    cout << " ----------= Test #4=----------" << endl;
+    // test for name search
+    for (int i = 0; i < 4; ++i)
+    {
+        int resultIndex;
+        string searchName;
+
+        resultIndex = FindString(NAMES, AR_LEN, searchName);
+
+        if (resultIndex != AR_LEN)
+        {
+            // array hit
+            cout << searchName << " is " << AGES[resultIndex] << " years old"
+                 << "( index # " << resultIndex << ')';
+        }
+        else
+        {
+            cout << searchName << " does not exist within the array.";
+        }
+        cout << endl;
+
+    }
+    cout << " ----------= Test #5=----------" << endl << endl;
+    {
+        int youngestIndex;
+
+        youngestIndex = FindSmallestInt(AGES, AR_LEN);
+
+        cout << "The youngest person is " << NAMES[youngestIndex]
+             << " who is ";
+        cout << AGES[youngestIndex] << " years old (Index # "
+             << youngestIndex << ')';
+    }
+    cout << endl;
+    cout << " ----------= Test #6=----------" << endl << endl;
+    {
+        int oldestIndex;
+        oldestIndex = FindLargestInt(AGES, AR_LEN);
+
+        cout << "The oldest person is " << NAMES[oldestIndex]
+             << " who is ";
+        cout << AGES[oldestIndex] << " years old (Index # "
+             << oldestIndex << ')';
+    }
+    cout << endl << " ----------= Test #7=----------" << endl << endl;
+    {
+        int mSumAges;
+
+        mSumAges = SumIntArray(AGES, AR_LEN);
+        cout << "Sum of all elements of the array is: " << mSumAges;
+    }
+    cout << endl;
+    cout << "Done.";
 
 
     /************************************************************************
