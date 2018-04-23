@@ -98,12 +98,19 @@ int main()
     string oldestPerson;            // CALC & OUT  - name of oldest person
     string youngestPerson;          // CALC & OUT  - name of youngest person
 
+    // OUTPUT - class header
     DisplayHeader(PROGRAMMER, CLASS, SECTION, LAB_NUM, LAB_NAME);
     /************************************************************************
      * INPUT - reads two inputs from the user (firstNum & secondNum)
      ***********************************************************************/
     // compute the average of the AGES array
     averageAges = AverageIntArray(AGES, AR_LEN);
+
+    // set up formatting
+    cout << fixed << setprecision(2);
+    cout << "Average value of ages array is : " << averageAges;
+    // clean up after ourselves
+    cout << scientific << setprecision(6) << endl << endl;
 
     // find an int to search for
     searchInt = SaneInputCinInt(0, 100, PROMPT_FIND_INT);
@@ -171,7 +178,7 @@ int main()
     {
         formattedString += NAMES[nameIndex];
         formattedString += "is";
-        formattedString += to_string(AGES[nameIndex]) += " years old and"
+        formattedString += to_string(AGES[nameIndex]) += " years old and "
                                                          "exists at index #";
         formattedString += to_string(nameIndex);
     }
