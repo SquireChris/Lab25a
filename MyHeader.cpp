@@ -7,6 +7,25 @@
  ***************************************************************************/
 #include "myHeader.h"
 
+/***************************************************************************
+ * FUNCTION DisplayHeader
+ * --------------------------------------------------------------------------
+ * outputs the class header to the console
+ * --------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ *      The following parameters must have defined values:
+ *          programmer  : programmer(s)'s name
+ *          mClass      : class name
+ *          section     : class section
+ *          num         : assignment number
+ *          name        : assignment name
+ *          byType      : assignment type ==> THIS SHOULD CONTAIN:
+ *                                              'L' for labs
+ *                                              'A' for Assignments
+ *
+ * POST-CONDITIONS
+ *      ==> returns nothing
+ ***************************************************************************/
 void DisplayHeader(const string &programmer, const string &mClass,
                    const string &section, int num, const string &name,
                    char byType)

@@ -37,6 +37,11 @@ int main()
  * SECTION      :   Class Days and Times
  * LAB_NUM      :   Lab Number
  * LAB_NAME     :   Title of the lab
+ * --------------------------------------------------------------------------
+ * PROCESSING - USED FOR PROGRAM EXECUTION
+ * --------------------------------------------------------------------------
+ * NAMES        :   hardcoded input names (parallel array)
+ * AGES         :   hardcoded input ages (parallel array)
  * *************************************************************************/
     const char PROGRAMMER[] = "Joshua Salzedo, Chris Burrell";
     const char CLASS[] = "CS1A";
@@ -77,18 +82,21 @@ int main()
     const string PROMPT_NAME = "enter a name to find: ";
 
 
-    double averageAges;
-    int firstInstanceOfAgeIndex;
-    int totalOccurrences;
-    int nameIndex;
-    int sumAges;
-    int youngestPersonIndex;
-    int oldestPersonIndex;
-    int searchInt;
-    string searchString;
-    string formattedString;
-    string oldestPerson;
-    string youngestPerson;
+    double averageAges;             // CALC & OUT  - average value of AGES
+    //                                  array
+    int firstInstanceOfAgeIndex;    // CALC & OUT  - index for First position
+    //                                  for input int
+    int totalOccurrences;           // CALC & OUT  - total occurences of
+    //                                  an input int
+    int nameIndex;                  // CALC & OUT  - index for found name
+    int sumAges;                    // CALC & OUT  - sum of AGES array
+    int youngestPersonIndex;        // CALC & OUT  -index of the smallest age
+    int oldestPersonIndex;          // CALC & OUT  - index of the biggest age
+    int searchInt;                  // IN & OUT    - user provided input
+    string searchString;            // IN & OUT    - user provided input
+    string formattedString;         // CALC & OUT  - Formatted output strings
+    string oldestPerson;            // CALC & OUT  - name of oldest person
+    string youngestPerson;          // CALC & OUT  - name of youngest person
 
     DisplayHeader(PROGRAMMER, CLASS, SECTION, LAB_NUM, LAB_NAME);
     /************************************************************************
