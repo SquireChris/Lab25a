@@ -83,7 +83,6 @@ int main()
     int smallestAgeIndex;
     int largestAgeIndex;
     int searchInt;
-    int foundNameIndex;
     string searchString;
     string formattedString;
     string oldestPerson;
@@ -147,23 +146,27 @@ int main()
     cout << formattedString << endl;
 
 
-    cout << "enter name to search for: ";
+    cout << "enter a name to find: ";
     getline(cin, searchString);
 
-    foundNameIndex = FindString(NAMES, AR_LEN, searchString);
+    nameIndex = FindString(NAMES, AR_LEN, searchString);
+    formattedString = "";
 
-    if (foundNameIndex == AR_LEN)
+    if (nameIndex == AR_LEN)
     {
-        formattedString = "Name ";
-        formattedString += searchString += " not found.";
+        formattedString = "Im sorry, \"";
+        formattedString += searchString += "\" was not found in my records.";
     }
     else
     {
-        formattedString = "Found ";
-        formattedString += NAMES[foundNameIndex];
+        formattedString += NAMES[nameIndex];
+        formattedString += "is";
+        formattedString += to_string(AGES[nameIndex]) += " years old and"
+                                                         "exists at index #";
+        formattedString += to_string(nameIndex);
     }
 
-    cout << formattedString << endl;
+    cout << formattedString << endl << endl;
 
     // fetch the index of the oldest person
     largestAgeIndex = FindLargestInt(AGES, AR_LEN);
@@ -175,7 +178,7 @@ int main()
     youngestPerson = NAMES[smallestAgeIndex];
 
     cout << "The oldest person is " << oldestPerson << endl;
-    cout << "The youngest person is " << youngestPerson << endl;
+    cout << "The youngest person is " << youngestPerson << endl << endl;
 
     sumAges = SumIntArray(AGES, AR_LEN);
     cout << "Overall, the total combined age is " << sumAges;
