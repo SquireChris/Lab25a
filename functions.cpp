@@ -105,8 +105,11 @@ int FindString(const string ARR[], int arrLen, const string &SEARCH_STR)
 int FindLargestInt(const int ARR[], int arrLen)
 {
     int max;
+    int maxIndex;
     int item;
+
     max = 0;
+    maxIndex = arrLen;
 
     for (int index = 0; index < arrLen; ++index)
     {
@@ -114,16 +117,22 @@ int FindLargestInt(const int ARR[], int arrLen)
         if (item > max)
         {
             max = item;
+            maxIndex = index;
         }
     }
-    return max;
+    return maxIndex;
 }
 
 int FindSmallestInt(const int ARR[], int arrLen)
 {
+    // declare
     int min;
     int item;
-    min = 9999;
+    int minIndex;
+
+    //Initialize
+    min = 1000;
+    minIndex = arrLen;
 
     for (int index = 0; index < arrLen; ++index)
     {
@@ -131,7 +140,8 @@ int FindSmallestInt(const int ARR[], int arrLen)
         if (item < min)
         {
             min = item;
+            minIndex = index;
         }
     }
-    return min;
+    return minIndex;
 }

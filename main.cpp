@@ -71,11 +71,85 @@ int main()
             21,
             21
     };
+    const string PROMPT_FIND_INT = "Please enter an age you want to look "
+                                   "for: ";
+
+
+    double averageAges;
+    int firstInstanceOfAgeIndex;
+    int totalOccurrences;
+    int nameIndex;
+    int sumAges;
+    int smallestAgeIndex;
+    int largestAgeIndex;
+    int searchInt;
+    int foundNameIndex;
+    string searchString;
+    string fstring;
+    string oldestPerson;
+    string youngestPerson;
 
     DisplayHeader(PROGRAMMER, CLASS, SECTION, LAB_NUM, LAB_NAME);
     /************************************************************************
      * INPUT - reads two inputs from the user (firstNum & secondNum)
      ***********************************************************************/
+    // compute the average of the AGES array
+    averageAges = AverageIntArray(AGES, AR_LEN);
+
+    // find an int to search for
+    searchInt = SaneInputCinInt(0, 100, PROMPT_FIND_INT);
+
+    // find the first instance of the searchInt
+    firstInstanceOfAgeIndex = FindFirstInstance(AGES, AR_LEN, searchInt);
+
+    // check if an instance was actually found
+    if (firstInstanceOfAgeIndex != AR_LEN)
+    {
+        fstring = "you found ";
+        fstring += NAMES[firstInstanceOfAgeIndex];
+        fstring += '\n';
+
+    }
+    else
+    {
+        fstring = "Name not found on the list.\n";
+    }
+    cout << fstring;
+
+    // find total occurences of the age
+    totalOccurrences = FindOccurrencesInt(AGES, AR_LEN, searchInt);
+    if (totalOccurrences != 0)
+    {
+        fstring = "there was a total of ";
+        fstring += to_string(totalOccurrences);
+        fstring += " occurrences of that age.\n";
+    }
+    else
+    {
+        fstring = "There were no occurences of that age.\n";
+    }
+    cout << fstring;
+
+
+    cout << "enter name to search for: ";
+    getline(cin, searchString);
+
+    foundNameIndex = FindString(NAMES, AR_LEN, searchString);
+
+    if (foundNameIndex == AR_LEN)
+    {
+        fstring = "Name ";
+        fstring += searchString += " not found.";
+    }
+    else
+    {
+        fstring = "Found ";
+        fstring += NAMES[foundNameIndex];
+    }
+
+    cout << fstring << endl;
+
+
 
     /************************************************************************
      * PROCESSING - describe processing here
