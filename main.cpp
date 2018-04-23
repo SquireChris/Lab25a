@@ -80,8 +80,8 @@ int main()
     int totalOccurrences;
     int nameIndex;
     int sumAges;
-    int smallestAgeIndex;
-    int largestAgeIndex;
+    int youngestPersonIndex;
+    int oldestPersonIndex;
     int searchInt;
     string searchString;
     string formattedString;
@@ -169,16 +169,21 @@ int main()
     cout << formattedString << endl << endl;
 
     // fetch the index of the oldest person
-    largestAgeIndex = FindLargestInt(AGES, AR_LEN);
+    oldestPersonIndex = FindLargestInt(AGES, AR_LEN);
     // and assign their name to a value we can more easily use
-    oldestPerson = NAMES[largestAgeIndex];
+    oldestPerson = NAMES[oldestPersonIndex];
 
     // fetch the index of the youngest person
-    smallestAgeIndex = FindSmallestInt(AGES, AR_LEN);
-    youngestPerson = NAMES[smallestAgeIndex];
+    youngestPersonIndex = FindSmallestInt(AGES, AR_LEN);
+    youngestPerson = NAMES[youngestPersonIndex];
 
-    cout << "The oldest person is " << oldestPerson << endl;
-    cout << "The youngest person is " << youngestPerson << endl << endl;
+    cout << "The oldest person is " << oldestPerson << " who is "
+         << AGES[oldestPersonIndex] << " years old which exists at index #"
+         << oldestPersonIndex << endl;
+
+    cout << "The youngest person is " << youngestPerson << " who is "
+         << AGES[youngestPersonIndex] << " years old which exists at index #"
+         << oldestPersonIndex << endl;
 
     sumAges = SumIntArray(AGES, AR_LEN);
     cout << "Overall, the total combined age is " << sumAges;
